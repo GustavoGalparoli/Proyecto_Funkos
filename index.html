@@ -12,24 +12,37 @@
     <!----------------------- Inicio Header-------------------------------------->
 
     <header>
-        <nav class="nav">
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="./index.html">
                     <img src="./img/branding/logo_light_horizontal.svg" alt="logo" class="logo">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop/shop.html">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/cart.html"><img src="./img/icons/cart-icon.svg" alt="icono de carrito"></a>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/cart.html">
+                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -42,14 +55,14 @@
             <article>
                 <h3>Nuevos Ingresos</h3>
                 <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href= "./pages/shop.html">SHOP</a>
+                <a href= "./pages/shop/shop.html">SHOP</a>
             </article>
         </section>
         <section>
             <article>
                 <h3>Star Wars & The Mandalorian</h3>
                 <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-                <a href="./pages/shop.html">VER COLECCION</a>
+                <a href="./pages/shop/shop.html">VER COLECCION</a>
             </article>
             <picture>
                 <img src="./img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
@@ -59,7 +72,7 @@
             <article>
                 <h3>Pokemon Indigo</h3>
                 <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-                <a href="">VER COLECCION</a>
+                <a href="./pages/shop/shop.html">VER COLECCION</a>
             </article>
             <picture>
                 <img src="./img/pokemon/vulpix-1.webp" alt="Figura coleccionable Funko de Vulpix">
@@ -134,7 +147,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="./pages/shop.html">shop</a>
+                        <a href="./pages/shop/shop.html">shop</a>
                     </li>
                     <li>
                         <a href="./pages/register.html">registrese</a>
@@ -153,5 +166,6 @@
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy</p>    
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
